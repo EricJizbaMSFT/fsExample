@@ -6,7 +6,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
   </ItemGroup>
+  <ItemGroup> 
+    <Compile Include="HttpTrigger.fs" />
+  </ItemGroup>
   <ItemGroup>
+    <Content Include="HttpTrigger\function.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
